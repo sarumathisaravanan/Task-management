@@ -1,0 +1,132 @@
+
+/* General page design */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    width: 600px;
+    max-width: 100%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 30px;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    padding: 10px 16px;
+    margin: 5px 3px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Add button */
+#taskForm button {
+    background: #2563eb;
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Individual task */
+.task {
+    background: #f1f5f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #667eea;
+}
+
+.task h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.task p {
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+/* Edit button */
+.edit {
+    background: #f59e0b;
+}
+
+/* Complete button */
+.complete {
+    background: #16a34a;
+}
+
+/* Delete button */
+.delete {
+    background: #dc2626;
+}
+
+/* Completed task */
+.task.completed {
+    border-left-color: #16a34a;
+}
+
+.task.completed h3 {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.status {
+    font-weight: bold;
+}
+
+/* Mobile responsive design */
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 18px;
+        margin: 10px auto;
+    }
+}
